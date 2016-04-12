@@ -31,7 +31,8 @@ public:
         return (m_current == obj.m_current);
     }
 
-    DFSIterator &operator++() noexcept;
+    inline DFSIterator &operator++() noexcept;
+
     DFSIterator operator++(int) noexcept
     {
         DFSIterator tmp(*this);
